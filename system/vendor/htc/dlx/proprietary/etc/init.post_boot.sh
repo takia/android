@@ -26,7 +26,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-target="msm8960"
+target=`getprop ro.board.platform`
 
 case "$target" in
     "msm8960")
