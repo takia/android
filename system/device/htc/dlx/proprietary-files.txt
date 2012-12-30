@@ -1,6 +1,5 @@
 # Configuration files
 etc/agps_rm
-etc/init.post_boot.sh
 
 # Executable files
 bin/akmd
@@ -13,12 +12,10 @@ bin/netsharing
 bin/qmuxd
 bin/thermald
 
-
-
 # recent add 12.25.12
 bin/pnpmgr
 bin/adaptive
-bin/hcheck
+#bin/hcheck
 bin/mm-pp-daemon
 bin/hdmid
 bin/shutdown
@@ -51,13 +48,15 @@ lib/libmmjpeg.so
 lib/liboemcamera.so
 lib/libOlaEngineNew.so
 lib/libposteffect.so
+lib/libstagefright.so
+
 
 # Graphics
 lib/egl/eglsubAndroid.so
 lib/egl/libEGL_adreno200.so
 lib/egl/libGLESv1_CM_adreno200.so
 lib/egl/libGLESv2_adreno200.so
-lib/egl/libGLESv2S3D_adreno200
+lib/egl/libGLESv2S3D_adreno200.so
 lib/egl/libq3dtools_adreno200.so
 lib/libC2D2.so
 lib/libc2d2_a3xx.so
@@ -108,6 +107,7 @@ lib/libqmiservices.so
 # Radio
 lib/libnetmgr.so
 lib/libqc-opt.so
+lib/libril.so
 lib/libril-qc-qmi-1.so
 lib/libril-qcril-hook-oem.so
 
@@ -146,3 +146,13 @@ etc/firmware/tzapps.b02
 etc/firmware/tzapps.b03
 etc/firmware/tzapps.mdt
 etc/firmware/vidcfw.elf
+
+# Additional libs
+lib/hw/alsa.msm8960.so
+lib/hw/audio.a2dp.default.so
+lib/hw/audio.primary.default.so
+lib/hw/audio.primary.msm8960.so
+lib/hw/audio_policy.default.so
+lib/hw/camera.msm8960.so
+lib/hw/hwcomposer.msm8960.so
+lib/hw/lights.msm8960.so

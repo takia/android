@@ -62,7 +62,7 @@ PRODUCT_COPY_FILES += \
     device/htc/dlx/dsp/soundimage/srs_global.cfg:system/etc/soundimage/srs_global.cfg
 
 PRODUCT_COPY_FILES += \
-    device/htc/dlx/dsp/snd_soc_msm/snd_soc_msm_2x:/system/etc/snd_soc_msm/snd_soc_msm_2x
+    device/htc/dlx/dsp/snd_soc_msm/snd_soc_msm_2x:/system/etc/snd_soc_msm/snd_soc_msm_2x \
 
 # Keylayouts and Keychars
 PRODUCT_COPY_FILES += \
@@ -81,8 +81,8 @@ PRODUCT_COPY_FILES += \
     device/htc/dlx/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
 
 # GPS
-#PRODUCT_PACKAGES += \
-#    gps.dlx \
+PRODUCT_PACKAGES += \
+    gps.dlx \
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -100,7 +100,7 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
 
 # Extra properties
@@ -117,9 +117,9 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-PRODUCT_LOCALES += en_US xxhdpi
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_LOCALES += en_US xhdpi
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/dlx/dlx-vendor.mk)

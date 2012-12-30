@@ -1,0 +1,4 @@
+make clean
+. build/envsetup.sh
+lunch full_dlx-userdebug
+make -j8 -d
