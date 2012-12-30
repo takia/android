@@ -1,0 +1,11 @@
+#
+# system.prop for evita
+#
+
+ro.sf.lcd_density=480
+ro.secure=0   #added
+ro.debuggable=1  #added
+
+# UMS
+persist.sys.usb.config=mass_storage,adb
+ro.vold.umsdirtyratio=40
