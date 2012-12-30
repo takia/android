@@ -13,7 +13,7 @@ Based on work by CyanogonMod team, Koush, and probably a million other people
 
 From an internal build not synced up yet
 -----  [ BEGIN DEBUG LOG ] -----
-
+<code>
 --------- beginning of /dev/log/main
 I/DEBUG   (  169):     40f6df58 20342e31 72646e41 2064696f 4154454d  1.4 Android META
 I/DEBUG   (  169):     40f6df68 4c47452d 00000000 00000000 00000023  -EGL........#...
@@ -323,4 +323,5 @@ I/DEBUG   (  169): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0000000
 D/AndroidRuntime( 2418): 
 D/AndroidRuntime( 2418): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
 D/AndroidRuntime( 2418): CheckJNI is ON
+</code>
 ------ [ END DEBUG LOG ] ------
