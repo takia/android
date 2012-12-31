@@ -48,8 +48,8 @@ lib/libmmjpeg.so
 lib/liboemcamera.so
 lib/libOlaEngineNew.so
 lib/libposteffect.so
-lib/libstagefright.so
-
+#lib/libstagefright.so
+#lib/libstagefrighthw.so
 
 # Graphics
 lib/egl/eglsubAndroid.so
@@ -107,7 +107,7 @@ lib/libqmiservices.so
 # Radio
 lib/libnetmgr.so
 lib/libqc-opt.so
-lib/libril.so
+#lib/libril.so
 lib/libril-qc-qmi-1.so
 lib/libril-qcril-hook-oem.so
 
