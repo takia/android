@@ -21,6 +21,8 @@ on emmc-fs
     mkdir /system
     mkdir /data 0771 system system
     mkdir /persist 0771 system system
+    mkdir this_is_recovery
+
 
     mount_all /fstab.dlx
 
@@ -220,11 +222,11 @@ on property:ro.bootmode=recovery
 on property:ro.mfgkernel=1
     write /sys/power/wake_lock mfgkernel
 
-#on property:ro.bootmode=recovery
-#   write /sys/devices/platform/android_usb/host_mode 1
+on property:ro.bootmode=recovery
+   write /sys/devices/platform/android_usb/host_mode 1
 
-#on property:ro.bootmode=recovery_manual
-#   write /sys/devices/platform/android_usb/host_mode 1
+on property:ro.bootmode=recovery_manual
+   write /sys/devices/platform/android_usb/host_mode 1
 
 on property:ro.9kramdump=0
     start kickstart
