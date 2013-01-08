@@ -81,11 +81,11 @@ PRODUCT_COPY_FILES += \
     device/htc/dlx/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
 
 # GPS
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     gps.dlx \
 
 # NFC
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     libnfc \
     libnfc_ndef \
     libnfc_jni \
@@ -94,7 +94,7 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 # Torch
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     Torch
 
 # Permissions

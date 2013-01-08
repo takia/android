@@ -303,10 +303,10 @@ on boot
 #--SSD_GPS
 
     # Chown polling nodes as needed from UI running on system server
- #   chown system system /persist
- #   chmod 0771 /persist
- #   chmod 0664 /sys/devices/platform/msm_sdcc.1/polling
- #   chown system system /sys/devices/platform/msm_sdcc.1/polling
+    chown system system /persist
+    chmod 0771 /persist
+    chmod 0664 /sys/devices/platform/msm_sdcc.1/polling
+    chown system system /sys/devices/platform/msm_sdcc.1/polling
 
 #++SSD_AUDIO
     chown system audio /dev/tfa9887

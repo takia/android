@@ -1,26 +1,78 @@
-# Configuration files
-etc/agps_rm
+#Configuration files
+#etc/agps_rm
 
 # Executable files
+/bin/ATFWD-daemon
 bin/akmd
-bin/charging
+bin/bridgemgrd
+bin/ds_fmc_appd
+bin/efsks
 bin/hci_qcomm_init
+bin/ks
 bin/mm-qcamera-daemon
 bin/mpdecision
 bin/netmgrd
-bin/netsharing
+bin/nl_listener
+bin/port-bridge
+bin/qcks
 bin/qmuxd
+bin/qseecomd
+bin/radish
 bin/thermald
+bin/usbhub
+bin/usbhub_init
+bin/v4l2-qcamera-app
+
 
 # recent add 12.25.12
 bin/pnpmgr
 bin/adaptive
-#bin/hcheck
+bin/hcheck
 bin/mm-pp-daemon
 bin/hdmid
-bin/shutdown
-bin/usbhub
-bin/usbhub_init
+#bin/shutdown
+
+lib/libCommandSvc.so
+lib/libconfigdb.so
+lib/libdiag.so
+lib/libdrmfs.so
+lib/libdsi_netctrl.so
+lib/libdsprofile.so
+lib/libdss.so
+lib/libdsutils.so
+lib/libgemini.so
+lib/libgsl.so
+lib/libI420colorconvert.so
+lib/libidl.so
+lib/libimage-jpeg-dec-omx-comp.so
+lib/libimage-jpeg-enc-omx-comp.so
+lib/libimage-omx-common.so
+lib/libllvm-a3xx.so
+lib/libloc_api_v02.so
+lib/libmmipl.so
+lib/libmmjpeg.so
+lib/libmmjps.so
+lib/libmmmpo.so
+lib/libmmmpod.so
+lib/libmmstillomx.so
+lib/libnetmgr.so
+lib/libOpenCL.so
+lib/libOpenVG.so
+lib/libqcci_legacy.so
+lib/libqdi.so
+lib/libqdp.so
+lib/libqmi.so
+lib/libqmiservices.so
+lib/libqmi_cci.so
+lib/libqmi_client_qmux.so
+lib/libqmi_common_so.so
+lib/libqmi_csi.so
+lib/libqmi_encdec.so
+lib/libQSEEComAPI.so
+lib/libril-qc-qmi-1.so
+lib/libril-qcril-hook-oem.so
+lib/libxml.so
+
 
 # Audio
 lib/libacdbloader.so
@@ -39,21 +91,22 @@ lib/libcameraface.so
 lib/libcamerapp.so
 lib/libcam_oem_plugin.so
 lib/libDxOAF.so
-lib/libgemini.so
+#lib/libgemini.so
 lib/libmmcamera_frameproc.so
 lib/libmmcamera_rawchipproc.so
 lib/libmmcamera_statsproc30.so
-lib/libmmipl.so
-lib/libmmjpeg.so
-lib/liboemcamera.so
-lib/libOlaEngineNew.so
-lib/libposteffect.so
-#lib/libstagefright.so
-#lib/libstagefrighthw.so
+#lib/libmmipl.so
+#lib/libmmjpeg.so
+#lib/liboemcamera.so
+#lib/libOlaEngineNew.so
+#lib/libposteffect.so
+##lib/libstagefright.so
+##lib/libstagefrighthw.so
 
 # Graphics
 lib/egl/eglsubAndroid.so
 lib/egl/libEGL_adreno200.so
+lib/egl/libGLES_android.so
 lib/egl/libGLESv1_CM_adreno200.so
 lib/egl/libGLESv2_adreno200.so
 lib/egl/libGLESv2S3D_adreno200.so
@@ -65,57 +118,66 @@ lib/libgsl.so
 lib/libOpenVG.so
 lib/libsc-a2xx.so
 lib/libsc-a3xx.so
+lib/libOmxCore.so
+lib/libOmxVdec.so
+lib/libOmxVenc.so
+lib/libmm-omxcore.so
+#lib/libstagefright_omx.so
+lib/libmmstillomx.so
+#libaricentomxplugin.so
+
+
 
 # GPS
-lib/hw/gps.default.so
-lib/libgps.so
-lib/libgps.utils.so
-lib/libloc_adapter.so
-lib/libloc_api_v02.so
-lib/libloc_eng.so
-lib/libloc_ext.so
+#lib/hw/gps.default.so
+#lib/libgps.so
+#lib/libgps.utils.so
+#lib/libloc_adapter.so
+#lib/libloc_api_v02.so
+#lib/libloc_eng.so
+#lib/libloc_ext.so
 
 # Media libraries
-#lib/libmmosal.so
+##lib/libmmosal.so
 lib/libmm-color-convertor.so
-#lib/libmmparser.so
-#lib/libmmparser_divxdrmlib.so
+##lib/libmmparser.so
+##lib/libmmparser_divxdrmlib.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/drm/libdrmwvmplugin.so
 # Modem firmware
 
 # NFC
-vendor/firmware/libpn544_fw.so
-lib/hw/nfc.dlx.so
+#vendor/firmware/libpn544_fw.so
+#lib/hw/nfc.dlx.so
 
 
 # Qualcomm/HTC common libs
-lib/libdiag.so
-lib/libdsi_netctrl.so
-lib/libdsutils.so
-lib/libidl.so
-lib/libqdi.so
-lib/libqdp.so
-lib/libqmi.so
-lib/libqmi_cci.so
-lib/libqmi_common_so.so
-lib/libqmi_csi.so
-lib/libqmi_encdec.so
-lib/libqmiservices.so
+#lib/libdiag.so
+#lib/libdsi_netctrl.so
+#lib/libdsutils.so
+#lib/libidl.so
+#lib/libqdi.so
+#lib/libqdp.so
+#lib/libqmi.so
+#lib/libqmi_cci.so
+#lib/libqmi_common_so.so
+#lib/libqmi_csi.so
+#lib/libqmi_encdec.so
+#lib/libqmiservices.so
 
 # Radio
-lib/libnetmgr.so
-lib/libqc-opt.so
+#lib/libnetmgr.so
+#lib/libqc-opt.so
 #lib/libril.so
-lib/libril-qc-qmi-1.so
-lib/libril-qcril-hook-oem.so
+#lib/libril-qc-qmi-1.so
+#lib/libril-qcril-hook-oem.so
 
 # Sensors
 lib/hw/sensors.dlx.so
-lib/libimu.so
-lib/libmlplatform.so
-lib/libmpl.so
+#lib/libimu.so
+#lib/libmlplatform.so
+#lib/libmpl.so
 
 # WLAN
 
@@ -148,11 +210,20 @@ etc/firmware/tzapps.mdt
 etc/firmware/vidcfw.elf
 
 # Additional libs
-lib/hw/alsa.msm8960.so
-lib/hw/audio.a2dp.default.so
-lib/hw/audio.primary.default.so
-lib/hw/audio.primary.msm8960.so
-lib/hw/audio_policy.default.so
-lib/hw/camera.msm8960.so
-lib/hw/hwcomposer.msm8960.so
+#lib/hw/alsa.msm8960.so
+#lib/hw/audio.a2dp.default.so
+#lib/hw/audio.primary.default.so
+#lib/hw/audio.primary.msm8960.so
+#lib/hw/audio_policy.default.so
+#lib/hw/camera.msm8960.so
+#lib/hw/hwcomposer.msm8960.so
+#lib/hw/copybit.msm8960.so
+#lib/hw/gps.default.so
+#lib/hw/gralloc.default.so
+#lib/hw/grallock.msm8960.so
+#lib/hw/hwcomposer.msm8960.so
+#lib/hw/keystore.msm8960.so
+#lib/hw/local_time.default.so
+#lib/hw/nfc.dlx.sp
+#lib/hw/power.default.so
 lib/hw/lights.msm8960.so
